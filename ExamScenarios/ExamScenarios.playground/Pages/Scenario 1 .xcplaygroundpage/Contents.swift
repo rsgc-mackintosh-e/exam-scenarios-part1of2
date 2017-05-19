@@ -23,7 +23,35 @@ import PlaygroundSupport
 // Create a new canvas
 let canvas = Canvas(width: 400, height: 600)
 
+canvas.fillColor = Color.init(hue: 20, saturation: 78, brightness: 98, alpha: 100)
 
+canvas.drawRectangle(bottomLeftX: 0, bottomLeftY: 0, width: 400, height: 600)
+
+//for c in stride(from: 0, through: 100, by: 25) {
+//    canvas.fillColor = Color.init(hue: 20, saturation: 78, brightness: 98, alpha: c)
+//}
+
+canvas.defaultBorderWidth = 2
+
+canvas.borderColor = Color.purple
+
+//canvas.fillColor = Color.init(hue: 20, saturation: 78, brightness: 30, alpha: 100)
+
+//Draw the grid of squares
+for x in stride(from: 0, through: 400, by: 100) {
+    for y in stride(from: 0, through: 300, by: 100) {
+        for c in stride(from: 0, through: 100, by: 25){
+        
+        canvas.fillColor = Color.init(hue: 20, saturation: 78, brightness: 30, alpha: c)
+        
+        
+          canvas.drawRectangle(bottomLeftX: x, bottomLeftY: y, width: 100, height: 100)
+        
+            
+        }
+    }
+
+}
 //: ## Template code
 //: The code below is necessary to see the result of your work in the Assistant Editor at right. Please do not remove.
 PlaygroundPage.current.liveView = canvas.imageView

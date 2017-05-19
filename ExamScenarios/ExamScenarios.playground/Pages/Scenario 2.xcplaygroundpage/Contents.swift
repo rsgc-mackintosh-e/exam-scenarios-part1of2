@@ -25,6 +25,7 @@ let canvas = Canvas(width: 400, height: 600)
 
 // Color constants
 let offWhite = Color(hue: 86, saturation: 6, brightness: 88, alpha: 100)
+
 let red = Color(hue: 350, saturation: 100, brightness: 80, alpha: 75)
 let blue = Color(hue: 196, saturation: 100, brightness: 75, alpha: 50)
 let yellow = Color(hue: 49, saturation: 96, brightness: 87, alpha: 100)
